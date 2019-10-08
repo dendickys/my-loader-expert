@@ -48,9 +48,9 @@ public class ContactAdapter extends CursorAdapter {
                 ActivityCompat.requestPermissions(activity, new String[]{permission}, requestCode);
             }
         }
-    }
 
-    public static boolean isGranted (Activity activity, String permission) {
-        return (ActivityCompat.checkSelfPermission(activity, permission) == PackageManager.PERMISSION_GRANTED);
+        public static boolean isGranted(Activity activity, String permission) {
+            return (ActivityCompat.checkSelfPermission(activity, permission) == PackageManager.PERMISSION_GRANTED);
+        }
     }
 }
